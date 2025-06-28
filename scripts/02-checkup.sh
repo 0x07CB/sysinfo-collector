@@ -12,12 +12,15 @@
 {
 
     echo "[2] Vérification des mises à jour disponibles :"
+    echo "Date du checkup : $(date)"
+    echo ""
+    echo '"""'
     if command -v apt >/dev/null; then
         if ! sudo apt update > /dev/null 2>&1; then
             echo "Erreur lors de l'exécution de 'apt update'. Arrêt du script."
             exit 1
         fi
-        apt list --upgradable
+        apt list --upgradable -a
     elif command -v dnf >/dev/null; then
         sudo dnf check-update
     elif command -v yum >/dev/null; then
@@ -26,5 +29,8 @@
         echo "Gestionnaire de paquets non reconnu."
     fi
 
+    echo '"""'
+    echo "==========================================="
+    echo ""
 
 } >> "$LOGFILE"
