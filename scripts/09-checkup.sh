@@ -3,4 +3,9 @@
 # Checkup script for system diagnostics
 # ######################################
 
-
+# #### ETAPE 
+# Description:
+#
+#
+#
+#
