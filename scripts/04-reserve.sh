@@ -14,14 +14,7 @@
 {
 
     echo "[4] État général de systemd :"
-    echo "----------------------------------------"
-    echo "Etat du système :"
     systemctl is-system-running
-
-    echo "----------------------------------------"
-    echo "Services en échec :"
     systemctl --failed
 
-    echo "----------------------------------------"
-
-} >>"$LOG_FILE" 2>&1
+} >> "$LOGFILE" 2>&1
