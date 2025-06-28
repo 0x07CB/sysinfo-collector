@@ -11,8 +11,16 @@
 #
 
 {
-    
-    echo "[8] Ports réseau ouverts :"
+    echo "===== [8] Ports réseau ouverts ====="
+    echo "Heure de l'exécution (ETAPE 8) : $(date +%H:%M:%S)"
+    echo "-------------------------------------------"
+    echo ""
+
+    echo '"""'
     ss -tulnp
+    echo '"""'
+    echo ""
+    echo "==========================================="
+    echo ""
 
 } >> "$LOGFILE" 2>&1
