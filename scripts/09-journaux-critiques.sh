@@ -12,7 +12,16 @@
 #
 
 {
-    echo "[9] Derniers journaux critiques :"
+    echo "===== [9] Journaux système – erreurs critiques ====="
+    echo "Heure de l'exécution (ETAPE 9) : $(date +%H:%M:%S)"
+    echo "-------------------------------------------"
+    echo ""
+
+    echo '"""'
     journalctl -p 3 -xb
+    echo '"""'
+    echo ""
+    echo "==========================================="
+    echo ""
 
 } >> "$LOGFILE" 2>&1

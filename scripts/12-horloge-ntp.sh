@@ -11,8 +11,16 @@
 #
 
 {
+    echo "===== [12] Horloge système et synchronisation NTP ====="
+    echo "Heure de l'exécution (ETAPE 12) : $(date +%H:%M:%S)"
+    echo "-------------------------------------------"
+    echo ""
 
-    echo "[12] Heure système et synchronisation NTP :"
+    echo '"""'
     timedatectl status
+    echo '"""'
+    echo ""
+    echo "==========================================="
+    echo ""
 
 } >> "$LOGFILE" 2>&1

@@ -12,8 +12,17 @@
 #
 
 {
-    echo "[11] Connexions et utilisateurs :"
+    echo "===== [11] Utilisateurs et connexions récentes ====="
+    echo "Heure de l'exécution (ETAPE 11) : $(date +%H:%M:%S)"
+    echo "-------------------------------------------"
+    echo ""
+
+    echo '"""'
     lastlog
     last -n 10
+    echo '"""'
+    echo ""
+    echo "==========================================="
+    echo ""
 
 } >> "$LOGFILE" 2>&1
