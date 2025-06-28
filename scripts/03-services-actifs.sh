@@ -10,14 +10,17 @@
 # — Liste les services en cours d’exécution. Identifier ceux qui ne sont pas requis.
 #
 
-
 {
+    echo "===== [3] Services actifs (en arrière-plan) ====="
+    echo "Heure de l'exécution (ETAPE 3) : $(date +%H:%M:%S)"
+    echo "-------------------------------------------"
+    echo ""
 
-    echo "[3] Services actifs :"
+    echo '"""'
     systemctl list-units --type=service --state=running
-
+    echo '"""'
     echo ""
     echo "==========================================="
     echo ""
 
-} >>"$LOG_FILE" 2>&1
+} >> "$LOGFILE" 2>&1

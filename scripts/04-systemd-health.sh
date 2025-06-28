@@ -10,13 +10,16 @@
 # — Vérifie si le système fonctionne correctement. Signale les services en échec.
 #
 
-
 {
+    echo "===== [4] État de santé du système via systemd ====="
+    echo "Heure de l'exécution (ETAPE 4) : $(date +%H:%M:%S)"
+    echo "-------------------------------------------"
+    echo ""
 
-    echo "[4] État général de systemd :"
+    echo '"""'
     systemctl is-system-running
     systemctl --failed
-
+    echo '"""'
     echo ""
     echo "==========================================="
     echo ""
