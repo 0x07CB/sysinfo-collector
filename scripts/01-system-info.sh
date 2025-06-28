@@ -12,9 +12,14 @@
 {
     echo "==========================================="
     echo "======== Checkup de l'environnement ======="
+    echo "==========================================="
+    echo ""
+    echo "Date du checkup : $(date +%d/%m/%Y)"
+    echo ""
     echo "===== [1] Version du noyau et système ====="
-    echo "Date du checkup : $(date)"
-    echo
+    echo "Heure de l'exécution (ETAPE 1) : $(date +%H:%M:%S)"
+    echo "-------------------------------------------"
+    echo ""
     echo "Informations détaillées du système (uname) :"
     echo
     echo "- Nom du noyau (kernel name) :"
@@ -44,9 +49,9 @@
     echo "Informations sur la distribution :"
     echo
     lsb_release -a 2>/dev/null || cat /etc/*release
-    echo
+    echo ""
     echo "==========================================="
-    echo
-} >> "$LOGFILE"
+    echo ""
+} >> "$LOGFILE" 2>&1
 
 
