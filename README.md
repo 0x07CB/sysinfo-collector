@@ -59,6 +59,8 @@ Les contributions sont les bienvenues !
 
 Pour toute suggestion ou bug, ouvrez une issue sur le dépôt.
 
+👉 Consultez le [guide de contribution](CONTRIBUTING.md) pour plus de détails.
+
 ## Avertissement
 Ce projet est en développement. Les fonctionnalités et la structure peuvent évoluer.
 
