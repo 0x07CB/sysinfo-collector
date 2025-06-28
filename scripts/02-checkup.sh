@@ -13,7 +13,11 @@
 
     echo "[2] Vérification des mises à jour disponibles :"
     if command -v apt >/dev/null; then
-        sudo apt update && apt list --upgradable
+        if ! sudo apt update > /dev/null 2>&1; then
+            echo "Erreur lors de l'exécution de 'apt update'. Arrêt du script."
+            exit 1
+        fi
+        apt list --upgradable
     elif command -v dnf >/dev/null; then
         sudo dnf check-update
     elif command -v yum >/dev/null; then
