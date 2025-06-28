@@ -11,14 +11,17 @@
 #
 
 {
+    echo "===== [6] Utilisation du disque et des partitions ====="
+    echo "Heure de l'exécution (ETAPE 6) : $(date +%H:%M:%S)"
+    echo "-------------------------------------------"
+    echo ""
 
-    echo "[6] Utilisation du système de fichiers :"
-    echo "----------------------------------------"
-
+    echo '"""'
     echo "Mounted Filesystems:"
     df -hT
-
-    echo "----------------------------------------"
-
+    echo '"""'
+    echo ""
+    echo "==========================================="
+    echo ""
 
 } >> "$LOGFILE" 2>&1
