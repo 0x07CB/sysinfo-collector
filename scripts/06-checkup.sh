@@ -10,3 +10,15 @@
 # — Analyse de l’espace disque. Un disque plein peut provoquer des comportements instables.
 #
 
+{
+
+    echo "[6] Utilisation du système de fichiers :"
+    echo "----------------------------------------"
+
+    echo "Mounted Filesystems:"
+    df -hT
+
+    echo "----------------------------------------"
+
+
+} >> "$LOGFILE" 2>&1

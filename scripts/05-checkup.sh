@@ -11,3 +11,20 @@
 #
 
 
+{
+    echo "[5] Utilisation CPU / RAM / Swap :"
+    echo "----------------------------------------"
+
+    echo "CPU Usage:"
+    top -b -n1 | head -n 10
+    echo "----------------------------------------"
+
+    echo "Memory Usage:"
+    free -h
+    echo "----------------------------------------"
+    echo "Swap Usage:"
+    swapon --show
+    echo "----------------------------------------"
+    echo ""
+
+} >> "$LOGFILE" 2>&1
