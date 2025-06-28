@@ -17,4 +17,4 @@
     systemctl list-units --type=service --state=running
 
 
-} >>"$LOG_FILE" 
+} >>"$LOG_FILE" 2>&1
