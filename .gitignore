@@ -1,5 +1,6 @@
 # Fichiers de log générés par les scripts
 scripts/checkup.log
+checkup.log
 
 # Fichiers temporaires d'édition
 *.swp
