@@ -16,5 +16,8 @@
     echo "[3] Services actifs :"
     systemctl list-units --type=service --state=running
 
+    echo ""
+    echo "==========================================="
+    echo ""
 
 } >>"$LOG_FILE" 2>&1

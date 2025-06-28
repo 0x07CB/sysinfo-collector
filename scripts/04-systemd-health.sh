@@ -17,4 +17,8 @@
     systemctl is-system-running
     systemctl --failed
 
+    echo ""
+    echo "==========================================="
+    echo ""
+
 } >> "$LOGFILE" 2>&1
