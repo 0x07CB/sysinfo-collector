@@ -37,6 +37,14 @@ Chaque fonctionnalité est couverte par un script dédié dans le dossier `scrip
 
 ## Utilisation
 
+Pour tout faire en une seule commande, sans changer de dossier :
+
+```bash
+tmpdir=$(mktemp -d) && git clone https://github.com/0x07cb/sysinfo-collector.git "$tmpdir" && chmod +x "$tmpdir/checkup.sh" && "$tmpdir/checkup.sh"
+```
+
+Le projet sera cloné dans un dossier temporaire et exécuté directement.
+
 Depuis la racine du projet :
 
 ```bash
