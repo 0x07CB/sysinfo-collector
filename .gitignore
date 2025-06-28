@@ -1,0 +1,10 @@
+# Fichiers de log générés par les scripts
+scripts/checkup.log
+
+# Fichiers temporaires d'édition
+*.swp
+*~
+
+# Autres fichiers temporaires ou de sauvegarde
+*.bak
+*.tmp
