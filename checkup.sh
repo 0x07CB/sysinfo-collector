@@ -9,7 +9,8 @@
 LOGFILE="$(pwd)/checkup.log"
 
 
-for script in /home/rds/github/0x07cb/sysinfo-collector/scripts/*.sh; do
+SCRIPTS_DIR="$(dirname "$0")/scripts"
+for script in "$SCRIPTS_DIR"/*.sh; do
     if [[ -x "$script" ]]; then
         chmod +x "$script"
         echo -e "\e[32mExécution du script : $script\e[0m"
