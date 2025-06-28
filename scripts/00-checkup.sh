@@ -3,15 +3,6 @@
 # Checkup script for system diagnostics
 # ######################################
 
-
-# ##### ENV VARS #####
-# Definition de la variable LOGFILE (emplacement du fichier de log)
-LOGFILE="$(pwd)/checkup.log"
-
-
-
-
-
 # #### ETAPE [1]: Version du noyau et informations système ####
 # Description:
 #
