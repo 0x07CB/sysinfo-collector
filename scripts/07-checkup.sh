@@ -11,3 +11,8 @@
 #
 
 
+{
+    echo "[7] Processus gourmands en ressources :"
+    ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head -n 10
+
+} >> "$LOGFILE" 2>&1

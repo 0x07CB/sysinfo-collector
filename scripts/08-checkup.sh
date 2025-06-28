@@ -10,4 +10,9 @@
 # — Énumère les services en écoute sur le réseau. Évaluation des surfaces d’exposition.
 #
 
+{
+    
+    echo "[8] Ports réseau ouverts :"
+    ss -tulnp
 
+} >> "$LOGFILE" 2>&1

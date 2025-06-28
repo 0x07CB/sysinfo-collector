@@ -10,3 +10,9 @@
 # — Recherche d’anomalies ou d’erreurs graves. Première alerte en cas de dysfonctionnements internes.
 #
 #
+
+{
+    echo "[9] Derniers journaux critiques :"
+    journalctl -p 3 -xb
+
+} >> "$LOGFILE" 2>&1

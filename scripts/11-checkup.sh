@@ -10,3 +10,10 @@
 # — Permet d’identifier les connexions précédentes. Repère les utilisateurs et les accès suspects.
 #
 #
+
+{
+    echo "[11] Connexions et utilisateurs :"
+    lastlog
+    last -n 10
+
+} >> "$LOGFILE" 2>&1

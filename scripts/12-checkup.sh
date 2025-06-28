@@ -10,4 +10,9 @@
 # — Vérifie l’exactitude de l’horloge système. Crucial pour les journaux, certificats, et authentifications.
 #
 
+{
 
+    echo "[12] Heure système et synchronisation NTP :"
+    timedatectl status
+
+} >> "$LOGFILE" 2>&1
