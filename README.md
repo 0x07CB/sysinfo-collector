@@ -10,3 +10,17 @@
 - Rapport détaillé et lisible pour chaque paramètre système
 - Scripts modulaires et adaptables
 
+## Utilisation
+
+```bash
+cd scripts/
+./00-checkup.sh
+```
+
+Les résultats sont enregistrés dans le fichier `checkup.log`.
+
+## Avertissement
+Ce projet est en développement. Les fonctionnalités et la structure peuvent évoluer.
+
+## Licence
+À définir.
